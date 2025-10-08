@@ -1,100 +1,71 @@
+<!doctype html>
 <html lang="ja">
-<nav id="main-nav" class="main-nav">
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#project">Project</a></li>
-<li><a href="#simulation">Simulation</a></li>
-<li><a href="#experiment">Experiment</a></li>
-<li><a href="#future">Future</a></li>
-<li><a href="#elsi">ELSI</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#appendix">Appendix</a></li>
-</ul>
-</nav>
-</div>
-</header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team Science Tokyo 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
+        <div class="site-title">Team Science Tokyo 2025</div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#simulation">Simulation</a></li>
+          <li><a href="#experiment">Experiment</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#elsi">ELSI</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#appendix">Appendix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container content">
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Arbitrary planar design using avidin-biotin binding</h1>
+        <p class="lede">We propose a new tool for bending DNA origami structures using the avidin–biotin interaction — stable and tunable.</p>
+        <div class="hero-images">
+          <img src="hero-1-placeholder.png" alt="illustration 1">
+          <img src="hero-2-placeholder.png" alt="illustration 2">
+          <img src="hero-3-placeholder.png" alt="illustration 3">
+        </div>
+      </div>
+    </section>
+  </main>
 
-<main class="container content">
-<section id="home" class="hero">
-<div class="hero-bg"></div>
-<div class="hero-content">
-<h1>Arbitrary planar design using avidin-biotin binding</h1>
-<p class="lede">We propose a new tool for bending DNA origami structures using the avidin–biotin interaction — stable and tunable.</p>
-<div class="hero-images">
-<img src="hero-1-placeholder.png" alt="illustration 1">
-<img src="hero-2-placeholder.png" alt="illustration 2">
-<img src="hero-3-placeholder.png" alt="illustration 3">
-</div>
-</div>
-</section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© BIOMOD Team Science Tokyo 2025 &nbsp; Contact : 
+        <a href="mailto:t2biomod@gmail.com">t2biomod@gmail.com</a>
+      </p>
+    </div>
+  </footer>
 
+  <script>
+    // ナビゲーションの色切り替え
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
 
-<section id="project" class="card">
-<h2>Background</h2>
-<p>DNA origami is a technique that constructs nanoscale structures by combining circular DNA with numerous short single-stranded DNA (ssDNA) molecules. Current strategies for bending DNA origami include methods that induce curvature in response to ionic concentration and those that employ ssDNA.</p>
-<ol class="refs">
-<li>P. W. K. Rothemund, Nature, 440, 297–302 (2006)</li>
-<li>Suzuki, Y. et al., Angew. Chem. Int. Ed., 59, 6230-6234 (2020)</li>
-<li>J. Funke, H. Dietz, Nature Nanotech, 11, 47–52 (2016)</li>
-</ol>
-<p class="problem"><strong>Problem</strong><br>Existing DNA origami bending methods depend on ionic concentration or specific ssDNA sequences, making them unstable and complex.</p>
-<p><a class="button" href="#simulation">Learn more in Simulation</a></p>
-</section>
-
-
-<section id="simulation" class="card">
-<h2>Idea</h2>
-<p>We propose a new tool for bending DNA origami structures using the avidin–biotin interaction. Biotin-modified thymine bases linked by carbon spacers bend when avidin binds causing precise curvature control.</p>
-<p><a class="button" href="#experiment">Learn more in Experiment</a></p>
-</section>
-
-
-<section id="future" class="card">
-<h2>Vision</h2>
-<p>When multiple thymine bases in planar DNA origami are modified by biotin, the addition of avidin induces the formation of a three-dimensional curved surface composed of multiple combined bends.</p>
-<p><a class="button" href="#team">Learn more in Future</a></p>
-</section>
-
-
-<section id="video" class="card">
-<h2>Youtube</h2>
-<p>Please click to learn more about our project!</p>
-<div class="video-placeholder">[動画プレースホルダ]</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<p>© BIOMOD Team Science Tokyo 2025 &nbsp; Contact : <a href="mailto:t2biomod@gmail.com">t2biomod@gmail.com</a></p>
-<p class="small">This is a visual mimic of the original Google Sites page created for educational/backup purposes.</p>
-</div>
-</footer>
-
-
-<script>
-(function(){
-const btn = document.querySelector('.nav-toggle');
-const nav = document.getElementById('main-nav');
-const header = document.getElementById('site-header');
-
-
-btn.addEventListener('click', ()=>{
-const expanded = btn.getAttribute('aria-expanded') === 'true';
-btn.setAttribute('aria-expanded', String(!expanded));
-nav.classList.toggle('open');
-});
-
-
-window.addEventListener('scroll', ()=>{
-if(window.scrollY > 60){
-header.classList.add('scrolled');
-} else {
-header.classList.remove('scrolled');
-}
-});
-})();
-</script>
+    // パララックス効果：スクロールに応じて背景をゆっくり動かす
+    const heroBg = document.querySelector('.hero-bg');
+    window.addEventListener('scroll', () => {
+      const offset = window.scrollY * 0.3; // 0.3倍速でゆっくり動く
+      heroBg.style.transform = `translateY(${offset}px)`;
+    });
+  </script>
 </body>
 </html>
