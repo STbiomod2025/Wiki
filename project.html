@@ -63,14 +63,12 @@ This page introduces our main project themes, focusing on the design and applica
 
 
 <script>
-window.addEventListener('scroll', function() {
-const navbar = document.getElementById('navbar');
-if (window.scrollY > 50) {
-navbar.classList.add('scrolled');
-} else {
-navbar.classList.remove('scrolled');
-}
-});
+// ナビゲーションの色切り替え
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
 </script>
 </body>
 </html>
