@@ -1,3 +1,20 @@
+:root {
+  --accent: #0b5fff;
+  --bg: #ffffff;
+  --muted: #666;
+  --max-width: 1100px;
+  --container-pad: 18px;
+  font-family: "Noto Sans JP", "Segoe UI", system-ui, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  scroll-behavior: smooth;
+}
+
 body {
 nav ul {
 list-style: none;
@@ -20,6 +37,40 @@ nav a:hover, nav a.active {
 color: #0078ff;
 }
 
+  .site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+.site-header.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+.site-title { font-weight: 700; }
 
 .hero {
 position: relative;
