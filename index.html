@@ -1,71 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
+}
+});
+</script>
+</body>
+</html>
+
+
+<!-- project.html -->
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Team Science Tokyo 2025</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project | Team Science Tokyo 2025</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
-        <div class="site-title">Team Science Tokyo 2025</div>
-      </div>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
-      <nav id="main-nav" class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#simulation">Simulation</a></li>
-          <li><a href="#experiment">Experiment</a></li>
-          <li><a href="#future">Future</a></li>
-          <li><a href="#elsi">ELSI</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#appendix">Appendix</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header id="navbar">
+<div class="logo">Team Science Tokyo 2025</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="project.html" class="active">Project</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-  <main class="container content">
-    <section id="home" class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <h1>Arbitrary planar design using avidin-biotin binding</h1>
-        <p class="lede">We propose a new tool for bending DNA origami structures using the avidin–biotin interaction — stable and tunable.</p>
-        <div class="hero-images">
-          <img src="hero-1-placeholder.png" alt="illustration 1">
-          <img src="hero-2-placeholder.png" alt="illustration 2">
-          <img src="hero-3-placeholder.png" alt="illustration 3">
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© BIOMOD Team Science Tokyo 2025 &nbsp; Contact : 
-        <a href="mailto:t2biomod@gmail.com">t2biomod@gmail.com</a>
-      </p>
-    </div>
-  </footer>
+<section class="project-hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Our Research Project</h1>
+</div>
+</section>
 
-  <script>
-    // ナビゲーションの色切り替え
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) header.classList.add('scrolled');
-      else header.classList.remove('scrolled');
-    });
 
-    // パララックス効果：スクロールに応じて背景をゆっくり動かす
-    const heroBg = document.querySelector('.hero-bg');
-    window.addEventListener('scroll', () => {
-      const offset = window.scrollY * 0.3; // 0.3倍速でゆっくり動く
-      heroBg.style.transform = `translateY(${offset}px)`;
-    });
-  </script>
+<section class="content">
+<h2>Project Overview</h2>
+<p>
+This page introduces our main project themes, focusing on the design and application of biotin-avidin-based planar assemblies.
+</p>
+
+
+<h3>Objectives</h3>
+<ul>
+<li>Develop a novel biotin-avidin surface patterning technique.</li>
+<li>Visualize molecular interactions via fluorescence microscopy.</li>
+<li>Establish interdisciplinary methods integrating biology and physics.</li>
+</ul>
+
+
+<h3>Team Members</h3>
+<p>Our team consists of undergraduate and graduate students in life science and applied physics at Tokyo Science University.</p>
+</section>
+
+
+<footer>
+<p>&copy; 2025 Team Science Tokyo</p>
+</footer>
+
+
+<script>
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+if (window.scrollY > 50) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+});
+</script>
 </body>
 </html>
