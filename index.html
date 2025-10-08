@@ -1,19 +1,4 @@
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Team Science Tokyo 2025</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-<header class="site-header">
-<div class="container header-inner">
-<div class="brand">
-<img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
-<div class="site-title">Team Science Tokyo 2025</div>
-</div>
-<button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
 <nav id="main-nav" class="main-nav">
 <ul>
 <li><a href="#home">Home</a></li>
@@ -32,12 +17,15 @@
 
 <main class="container content">
 <section id="home" class="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
 <h1>Arbitrary planar design using avidin-biotin binding</h1>
 <p class="lede">We propose a new tool for bending DNA origami structures using the avidin–biotin interaction — stable and tunable.</p>
 <div class="hero-images">
 <img src="hero-1-placeholder.png" alt="illustration 1">
 <img src="hero-2-placeholder.png" alt="illustration 2">
 <img src="hero-3-placeholder.png" alt="illustration 3">
+</div>
 </div>
 </section>
 
@@ -86,7 +74,27 @@
 
 
 <script>
-// Small script to toggle mobile nav
 (function(){
 const btn = document.querySelector('.nav-toggle');
+const nav = document.getElementById('main-nav');
+const header = document.getElementById('site-header');
+
+
+btn.addEventListener('click', ()=>{
+const expanded = btn.getAttribute('aria-expanded') === 'true';
+btn.setAttribute('aria-expanded', String(!expanded));
+nav.classList.toggle('open');
+});
+
+
+window.addEventListener('scroll', ()=>{
+if(window.scrollY > 60){
+header.classList.add('scrolled');
+} else {
+header.classList.remove('scrolled');
+}
+});
+})();
+</script>
+</body>
 </html>
