@@ -47,9 +47,18 @@ color: #0078ff;
   transition: background 0.3s ease, color 0.3s ease;
   z-index: 1000;
 }
+  
 .site-header.scrolled {
   background: rgba(0, 0, 0, 0.9);
   color: #fff;
+}
+
+  .nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 20px;
+  color: inherit;
 }
 
 .header-inner {
