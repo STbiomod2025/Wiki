@@ -135,7 +135,7 @@ margin-right: 10px;
 footer img {
   height: 100px;          /* 画像の高さを30pxに指定（好きなサイズに変えられます）*/
   width: auto;           /* 横幅は高さに合わせて自動調整 */
-  margin-right: 10px;    /* 画像の右側に10pxの余白を設ける */
+  
 }
 
 /* パララックス効果をCSSで実現 */
