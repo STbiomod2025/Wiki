@@ -1,120 +1,82 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Science Tokyo 2025 - Experiment</title>
-    <style>
-        /* 基本的なスタイリング */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        /* ヘッダー */
-        .header {
-            background-color: #ffffff;
-            padding: 10px 40px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        /* ナビゲーションメニュー */
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav li {
-            margin-left: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #5f6368;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 10px 5px;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s;
-        }
-        nav a:hover, nav a.active {
-            color: #1a73e8;
-            border-bottom: 2px solid #1a73e8;
-        }
-
-        /* メインコンテンツ */
-        .main-content {
-            padding: 40px;
-        }
-        .main-content h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 15px;
-        }
-        .experiment-section {
-            margin-bottom: 30px;
-        }
-        .experiment-section h3 {
-            font-size: 24px;
-            color: #1a73e8;
-            margin-bottom: 15px;
-        }
-        .experiment-section p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-
-        /* フッター */
-        footer {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 20px;
-            font-size: 12px;
-            color: #555;
-            border-top: 1px solid #ddd;
-        }
-        footer p {
-            margin: 5px 0;
-        }
-        footer a {
-            color: #555;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project | Team Science Tokyo 2025</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
+        <div class="site-title">Team Science Tokyo 2025</div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="experiment.html">Experiment</a></li>
+          <li><a href="future.html">Future</a></li>
+          <li><a href="elsi.html">ELSI</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="appendix.html">Appendix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header class="header">
-        <h1>Team Science Tokyo 2025</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#simulation">Simulation</a></li>
-                <li><a href="#experiment" class="active">Experiment</a></li>
-                <li><a href="#future">Future</a></li>
-                <li><a href="#elsi">ELSI</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#appendix">Appendix</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<section class="hero project-hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Our Research Project</h1>
+</div>
+</section>
+
+
+<section class="content">
+<h2>Introduction</h2>
+<p>
+DNA origami enables the creation of nanoscale structures by folding DNA into designed shapes. This technology has opened new possibilities in nanodevices, molecular computing, and synthetic biology.
+</p>
+<p>
+
+However, current bending techniques using ionic conditions or single-stranded DNA (ssDNA) linkers often suffer from low stability and complex design requirements.Moreover, environmental factors such as pH and temperature can easily disrupt the structures.
+
+</p>
+<p>
+To overcome these limitations, we propose a novel method for bending DNA origami using the highly stable and specific avidin–biotin interaction. This approach allows precise and robust curvature control through simple biotin modification, providing a new tool for constructing durable DNA origami architectures independent of environmental conditions such as ion concentration.
+</p>
+
+<h3>Idea</h3>
+<ul>
+
+</ul>
+
+
+<h3>Achievement</h3>
+
+</section>
+
+
+<footer>
+<p>&copy; 2025 Team Science Tokyo</p>
+</footer>
+
+
+<script>
+// ナビゲーションの色切り替え
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+</script>
+</body>
+</html>
 
     <main class="main-content">
         <h2>Experiment</h2>
