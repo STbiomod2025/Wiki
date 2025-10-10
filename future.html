@@ -1,1 +1,62 @@
 
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project | Team Science Tokyo 2025</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
+        <div class="site-title">Team Science Tokyo 2025</div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="experiment.html">Experiment</a></li>
+          <li><a href="future.html">Future</a></li>
+          <li><a href="elsi.html">ELSI</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="appendix.html">Appendix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<section class="hero project-hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Future</h1>
+</div>
+</section>
+
+
+<section class="content">
+
+
+
+</section>
+
+
+<footer>
+<p>&copy; 2025 Team Science Tokyo</p>
+</footer>
+
+
+<script>
+// ナビゲーションの色切り替え
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+</script>
+</body>
+</html>
