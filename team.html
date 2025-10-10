@@ -1,1 +1,60 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Team Science Tokyo 2025</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="logo-placeholder.png" alt="Team Science Tokyo 2025">
+        <div class="site-title">Team Science Tokyo 2025</div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="#simulation">Simulation</a></li>
+          <li><a href="#experiment">Experiment</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#elsi">ELSI</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#appendix">Appendix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Arbitrary planar design using avidin-biotin binding</h1>
+</div>
+</section>
+
+
+<section class="content" id="about">
+</section>
+
+<footer>
+<p>&copy; 2025 Team Science Tokyo</p>
+</footer>
+
+
+<script>
+// スクロール時にヘッダーの背景を変更
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+if (window.scrollY > 50) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+});
+</script>
+</body>
+</html>
