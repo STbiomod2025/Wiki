@@ -195,3 +195,55 @@ background-size: cover;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
+
+/* Topic-area */
+.topic-section {
+	background-color: #fff;
+	color: var(--text-color);
+	background-size: cover;
+	font-size: 	0.9em;
+	width: 80%;
+	margin: 2vh auto 10vh;
+	border-radius: 20px;
+	padding: 5vw 10vw;
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+	word-spacing : 0.05em;
+	font-family: "Inter", sans-serif;
+}
+.topic-section h3, .topic-section h4 {
+    line-height: 1.5;
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+.topic-section h3{
+	line-height: 1;
+	color: var(--primary-color);
+}
+.topic-section h5 {
+	padding: 0.6rem 1rem;
+	border-left: 4px solid var(--text-color);
+}
+.topic-section p{
+	margin-bottom: 1.5em;
+}
+.topic-title{
+	width: 100%;
+	border-bottom: dashed 2px var(--secondary-color);
+	margin-bottom: 20px;
+}
+.topic-section ul {
+	color: #1e366a;
+	border: dotted #1e366a 1px;
+	padding: 0.5em 0.5em 0.5em 2em;
+}
+.topic-section ul li {
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+.listtt{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
