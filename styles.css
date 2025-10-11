@@ -236,3 +236,24 @@ background-size: cover;
 	line-height: 1.5;
 	padding: 0.5em 0;
 }
+
+
+/* Topic slider */
+.topic-slider {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 80%;
+}
+
+.topic-card {
+  height: 400;
+}
+
+.topic-slider-img {
+  margin: 0 10px;
+}
+
+.topic-slider-img img {
+  height: auto;
+  width: 100%;
+}
