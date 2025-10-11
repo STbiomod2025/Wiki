@@ -150,8 +150,13 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+	
 /* TEAM */
-/* TEAM */
+
+.container {
+	width: 100%:
+}
+	
 .list-grid1 {
 	display: grid;
 	color: #555;
