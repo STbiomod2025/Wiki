@@ -179,7 +179,7 @@ background-size: cover;
 /* 👇ここが主な修正点 */
 .AI {
 	width: 100%;
-	max-width: 180px;   /* 画像サイズ上限 */
+	max-width: 400px;   /* 画像サイズ上限 */
 	overflow: hidden;
 	margin: 0 auto 0.5rem;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
