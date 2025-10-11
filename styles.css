@@ -154,7 +154,7 @@ background-size: cover;
 /* TEAM */
 
 .container {
-	width: 100%:
+	width: 80%:
 }
 	
 .list-grid1 {
@@ -184,7 +184,7 @@ background-size: cover;
 /* 👇ここが主な修正点 */
 .AI {
 	width: 100%;
-	max-width: 400px;   /* 画像サイズ上限 */
+	max-width: 500px;   /* 画像サイズ上限 */
 	overflow: hidden;
 	margin: 0 auto 0.5rem;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
