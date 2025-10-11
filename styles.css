@@ -149,3 +149,49 @@ z-index: -1;
 background-attachment: fixed;
 background-size: cover;
 }
+
+/* TEAM */
+.list-grid1 {
+	display: grid;
+	color: #555;
+}
+.list-grid1 .list {
+    display: grid;
+}
+.list-grid1 .list * {
+	margin: 0;padding: 0;
+}
+.teamh4 {
+	font-size: 1.2rem;
+  font-weight: 700;
+}
+.teamp {
+	font-size: 1.2rem;
+  font-weight: 400;
+}
+	@media screen and (min-width:500px) {
+	.list-grid1 {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	}
+
+	@media screen and (min-width:800px) {
+	.list-grid1 {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+	}
+
+.list-grid1 .list {
+	padding: 1rem;
+	background: #eee;
+  grid-template-rows: auto 1fr;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+}
+
+.AI{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
