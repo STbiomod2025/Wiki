@@ -112,18 +112,45 @@ However, ssDNA-based methods maintain curved structures through hybridization, m
     <ul>
   <li>
     <input type="checkbox" id="task-done" checked disabled>
-    <label for="task-done">Confirm that biotin-modified dsDNA binds to avidin to form a complex</label>
+    <label for="task-done">Calculate the biotin-to-biotin distance and linker length at which avidin can bind to biotin attached to dsDNA, based on molecular properties such as avidin size and dsDNA rigidity.</label>
   </li>
   <li>
     <input type="checkbox" id="task-done" checked disabled>
-    <label for="task-done">Confirm that the proportion of dsDNA forming complexes with avidin changes with varying avidin concentrations
+    <label for="task-done">Confirm that dsDNA bends when an avidin-biotin complex forms.
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-done" checked disabled>
+    <label for="task-done">Confirm that the curvature radius of dsDNA changes with variations in linker length.
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-done" checked disabled>
+    <label for="task-done">Confirm that the curvature radius of dsDNA changes with variations in the biotin-to-biotin distance.
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-done" checked disabled>
+    <label for="task-done">Quantify the correlation between linker length and the curvature radius of dsDNA.
     </label>
   </li>
   <li>
     <input type="checkbox" id="task-pending" disabled>
-    <label for="task-pending">Confirm that dsDNA bends when avidin-biotin binding is formed.</label>
+    <label for="task-pending">Quantify the correlation between biotin-to-biotin distance and the curvature radius of dsDNA.</label>
   </li>
-  
+  <li>
+    <input type="checkbox" id="task-hold" disabled>
+    <label for="task-hold">Verify that planar DNA origami can bend under the force of the avidin-biotin bond.</label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-pending" disabled>
+    <label for="task-pending">Utilise the curved dsDNA data to design the desired curved structure for planar DNA origami.</label>
+  </li>
+
+    <script>
+  // id="task-hold" の要素を取得して、その indeterminate プロパティを true にする
+  document.getElementById('task-hold').indeterminate = true;
+</script>
 </ul>
 
 <h2>Experiment</h2>
