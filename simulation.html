@@ -54,19 +54,19 @@ The four binding sites approximate a regular tetrahedral structure. Treating the
      <tr>
         <td><img src="s2.png" width="300"></td>
         <td>&nbsp;</td>
-        <td>Avidin has four binding sites, each with an edge length of approximately 2.4 nm.
-
-The four binding sites approximate a regular tetrahedral structure. Treating the center of the tetrahedron as the center of a sphere and approximating avidin as a rigid sphere yields a radius of approximately 2.95 nm.
-
+        <td>The length of the linker refers to the distance from the end of the biotin to the end of the spacer, as shown in the figure on the right.
 </td>
     </tr>
      <tr>
-        <td><img src="s3.png" width="300"></td>
+        <td><img src="s3.jp" width="300"></td>
         <td>&nbsp;</td>
-        <td>Avidin has four binding sites, each with an edge length of approximately 2.4 nm.
+        <td>The following simulation represents the curved structure formed by biotin-modified DNA via the avidin-biotin interaction as a rigid body approximation model using Pymunk.
 
-The four binding sites approximate a regular tetrahedral structure. Treating the center of the tetrahedron as the center of a sphere and approximating avidin as a rigid sphere yields a radius of approximately 2.95 nm.
+The DNA zigzag approximates a structure composed of numerous connected cylindrical rigid body segments.
 
+Each cylinder has a radius of 1.0 nm and a thickness of 3.24 Å, corresponding to one base pair.
+
+Using Pymunk's collision handling, we set up physical repulsion between DNA segments and the avidin circle.
 </td>
     </tr>
 </table>
