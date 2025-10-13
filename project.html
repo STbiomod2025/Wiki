@@ -82,7 +82,7 @@ However, ssDNA-based methods maintain curved structures through hybridization, m
     <h2>We propose a DNA bending tool utilizing avidin-biotin binding！</h2>
 　<table>
     <tr>
-        <td><img src="s1.jpg" width="300"></td>
+        <td><img src="project.png" width="300"></td>
         <td>&nbsp;</td>
         <td>In this method, the DNA is first modified with biotin. When avidin is added there, an avidin-biotin complex is formed. The interaction between avidin and biotin pulls the DNA toward the avidin side. Then, like a bowstring bending, the DNA curves.
             <br>
@@ -154,7 +154,47 @@ However, ssDNA-based methods maintain curved structures through hybridization, m
 </ul>
 
 <h2>Experiment</h2>
+<ul>
+  <li>
+    <input type="checkbox" id="task-done" checked disabled>
+    <label for="task-done">Confirm that biotin-modified dsDNA binds to avidin to form a complex</label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-done" checked disabled>
+    <label for="task-done">Confirm that the proportion of dsDNA forming complexes with avidin changes with varying avidin concentrations
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-hold"  disabled>
+    <label for="task-done">Establish a method for avidin and biotin-modified dsDNA to bind with high probability in a 1:1 ratio
 
+（Adding excess avidin and narrowing the biotin spacer distance may increase the probability of one-to-one binding.）
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-pending"  disabled>
+    <label for="task-done">Confirm that dsDNA bends when avidin-biotin binding is formed.
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-pending"  disabled>
+    <label for="task-done">Confirm that the curvature of dsDNA changes with variations in linker length
+    </label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-pending" disabled>
+    <label for="task-pending">Confirm that the curvature of dsDNA changes with variations in the distance between biotin groups</label>
+  </li>
+  <li>
+    <input type="checkbox" id="task-pending" disabled>
+    <label for="task-hold">Confirm that planar DNA origami can bend under the force of the avidin-biotin bond</label>
+  </li>
+ 
+    <script>
+  // id="task-hold" の要素を取得して、その indeterminate プロパティを true にする
+  document.getElementById('task-hold').indeterminate = true;
+</script>
+</ul>
 
 </section>
 
